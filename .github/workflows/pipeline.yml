@@ -20,7 +20,7 @@ jobs:
       run: |
         docker build -t hello-world-app .
         docker tag hello-world-app:latest 4385-1814-4064.dkr.ecr.us-west-2.amazonaws.com/hello-world-app:latest
-        docker push <your-aws-account-id>.dkr.ecr.<region>.amazonaws.com/hello-world-app:latest
+        docker push 4385-1814-4064.dkr.ecr.us-west-2.amazonaws.com/hello-world-app:latest
 
     - name: Update ECS Service
       run: |
